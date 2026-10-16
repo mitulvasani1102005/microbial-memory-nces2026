@@ -1,0 +1,327 @@
+HTML
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#06243b">
+<meta name="description" content="NCES 2026 student research poster exploring microbial memory-like responses to repeated environmental pollution exposure using published studies.">
+<title>Microbial Memory | NCES 2026</title>
+<style>
+:root {
+  --navy:#06243b;
+  --blue:#087eaa;
+  --aqua:#45d5cf;
+  --green:#a8e6b0;
+  --paper:#f4fafb;
+  --ink:#173447;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--paper);
+  color:var(--ink);
+  line-height:1.65;
+}
+header {
+  background:linear-gradient(135deg,#06243b,#087eaa);
+  color:white;
+  padding:32px 18px;
+  text-align:center;
+}
+.tag {
+  display:inline-block;
+  border:1px solid #80e7dd;
+  border-radius:30px;
+  padding:5px 12px;
+  font-size:12px;
+  letter-spacing:1px;
+}
+h1 { font-size:clamp(28px,6vw,48px); line-height:1.15; }
+header p { max-width:720px; margin:12px auto; }
+nav {
+  position:sticky;
+  top:0;
+  z-index:5;
+  display:flex;
+  gap:8px;
+  overflow-x:auto;
+  padding:10px;
+  background:#fff;
+  box-shadow:0 2px 10px #102b3b16;
+}
+nav a {
+  white-space:nowrap;
+  color:var(--navy);
+  text-decoration:none;
+  background:#e7f6f7;
+  border-radius:20px;
+  padding:7px 12px;
+  font-size:13px;
+}
+main { max-width:1000px; margin:auto; padding:16px; }
+section {
+  background:white;
+  margin:18px 0;
+  padding:22px;
+  border-radius:16px;
+  box-shadow:0 4px 18px #06243b0b;
+  scroll-margin-top:70px;
+}
+h2 { color:#075b7d; line-height:1.3; }
+h3 { color:#087eaa; }
+.kicker {
+  color:#087eaa;
+  font-weight:bold;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-size:12px;
+}
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(210px,1fr));
+  gap:12px;
+}
+.tile {
+  background:#edf8fa;
+  padding:15px;
+  border-radius:12px;
+  border-left:4px solid var(--aqua);
+}
+.flow {
+  display:grid;
+  gap:8px;
+  max-width:600px;
+  margin:18px auto;
+  text-align:center;
+}
+.step {
+  padding:13px;
+  background:#e6f7f8;
+  border:1px solid #b7e8e8;
+  border-radius:10px;
+  font-weight:bold;
+}
+.arrow { color:#087eaa; font-size:22px; line-height:1; }
+.note {
+  background:#fff8e6;
+  border-left:4px solid #e3ad36;
+  padding:12px;
+  border-radius:6px;
+  font-size:14px;
+}
+.pill {
+  display:inline-block;
+  background:#e6f5ec;
+  color:#17623b;
+  padding:4px 9px;
+  border-radius:20px;
+  font-size:12px;
+}
+.chart {
+  width:100%;
+  height:auto;
+  display:block;
+  margin:12px 0;
+}
+.placeholder {
+  border:2px dashed #83b9c7;
+  padding:20px;
+  border-radius:12px;
+  text-align:center;
+  background:#f7fcfd;
+}
+a { color:#087eaa; overflow-wrap:anywhere; }
+footer {
+  background:var(--navy);
+  color:white;
+  text-align:center;
+  padding:25px 15px;
+  font-size:13px;
+}
+button {
+  background:#087eaa;
+  color:white;
+  border:0;
+  border-radius:8px;
+  padding:10px 14px;
+  font-size:14px;
+}
+.small { font-size:13px; color:#547080; }
+@media(min-width:700px) {
+  main { padding:28px; }
+  section { padding:28px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <span class="tag">NCES 2026 · STUDENT RESEARCH POSTER</span>
+  <p>Environmental Microbiology | Comparative Literature Study</p>
+  <h1>Do Microbes Respond Differently to Pollution the Second Time?</h1>
+  <p><strong>Exploring Microbial Memory-Like Responses to Repeated Environmental Pollution Exposure</strong></p>
+  <p class="small" style="color:#d9f7ff">Presenter: [Your Name] · M.Sc. Microbiology</p>
+  <p class="small" style="color:#d9f7ff">BKNMU, Junagadh, Gujarat, India</p>
+</header>
+
+<nav aria-label="Poster navigation">
+  <a href="#overview">Overview</a>
+  <a href="#aim">Aim</a>
+  <a href="#method">Methodology</a>
+  <a href="#diagram">Diagram</a>
+  <a href="#analysis">Statistics</a>
+  <a href="#findings">Findings</a>
+  <a href="#limits">Limitations</a>
+  <a href="#references">References</a>
+</nav>
+
+<main>
+<section id="overview">
+  <div class="kicker">01 · Background</div>
+  <h2>Why study repeated pollution exposure?</h2>
+  <p>Microorganisms may encounter the same environmental pollutant more than once. An earlier exposure can sometimes influence how cells respond to a later exposure. Depending on the organism and conditions, researchers may observe changes in growth, survival, stress responses or recovery.</p>
+  <p>These changes can be described as <strong>memory-like responses</strong>. This does not mean bacteria remember in the human sense. The term describes a possible measurable effect of previous exposure on a later response.</p>
+  <div class="grid">
+    <div class="tile"><h3>Growth</h3><p>Does growth after the second exposure differ from the first?</p></div>
+    <div class="tile"><h3>Survival</h3><p>Does the proportion of surviving cells change?</p></div>
+    <div class="tile"><h3>Stress response</h3><p>Do measured stress indicators change after repeated exposure?</p></div>
+  </div>
+</section>
+
+<section id="aim">
+  <div class="kicker">02 · Research question</div>
+  <h2>Aim and objectives</h2>
+  <p><strong>Aim:</strong> To investigate whether previous exposure to an environmental pollutant is associated with a different microbial response during a subsequent exposure, using published research studies.</p>
+  <h3>Objectives</h3>
+  <ul>
+    <li>Identify studies reporting repeated exposure to the same pollutant.</li>
+    <li>Record the microbial species, pollutant, exposure conditions and recovery interval.</li>
+    <li>Extract reported growth, survival or stress-response outcomes.</li>
+    <li>Compare first-exposure and subsequent-exposure responses where data permit.</li>
+    <li>Evaluate differences in study methods and the strength of available evidence.</li>
+  </ul>
+  <p><strong>Research question:</strong> Under what conditions does a previous pollutant exposure alter the response of microorganisms to a later exposure?</p>
+</section>
+
+<section id="method">
+  <div class="kicker">03 · Study design</div>
+  <h2>Methodology: Published-study comparison</h2>
+  <div class="grid">
+    <div class="tile"><strong>1. Search</strong><p>Search scholarly databases for studies of repeated microbial pollutant exposure.</p></div>
+    <div class="tile"><strong>2. Screen</strong><p>Check whether each study reports an identifiable first and subsequent exposure.</p></div>
+    <div class="tile"><strong>3. Extract</strong><p>Record species, pollutant, dose, exposure duration, recovery interval and outcomes.</p></div>
+    <div class="tile"><strong>4. Compare</strong><p>Compare responses within each study and assess whether studies are sufficiently similar.</p></div>
+  </div>
+  <h3>Suggested extraction fields</h3>
+  <p>Study citation · Microorganism · Pollutant · Exposure protocol · Recovery interval · Outcome measure · Sample size · Mean and variability · First-exposure result · Subsequent-exposure result.</p>
+  <p class="note"><strong>Important:</strong> Include only studies that meet predefined eligibility criteria. Record excluded studies and reasons where possible. Do not assume that every paper on pollution tolerance tests repeated exposure.</p>
+</section>
+
+<section id="diagram">
+  <div class="kicker">04 · Conceptual framework</div>
+  <h2>How can a memory-like response be tested?</h2>
+  <div class="flow">
+    <div class="step">First exposure to a pollutant</div>
+    <div class="arrow">↓</div>
+    <div class="step">Measure initial microbial response</div>
+    <div class="arrow">↓</div>
+    <div class="step">Recovery period / inter-exposure interval</div>
+    <div class="arrow">↓</div>
+    <div class="step">Second exposure to the same pollutant</div>
+    <div class="arrow">↓</div>
+    <div class="step">Measure growth, survival or stress response again</div>
+    <div class="arrow">↓</div>
+    <div class="step">Compare results and assess uncertainty</div>
+  </div>
+  <p class="note">Conceptual framework only. Actual experimental designs and biological mechanisms differ between published studies.</p>
+</section>
+
+<section id="analysis">
+  <div class="kicker">05 · Biostatistics</div>
+  <h2>Graphic data analysis and statistical plan</h2>
+  <p>Use numerical values only when they can be extracted reliably from the original papers. Keep units and comparison groups consistent.</p>
+  <div class="grid">
+    <div class="tile"><h3>Descriptive analysis</h3><p>Summarize species, pollutants, study designs and reported response directions.</p></div>
+    <div class="tile"><h3>Effect size</h3><p>For suitable continuous outcomes, consider a mean difference or standardized mean difference.</p></div>
+    <div class="tile"><h3>Uncertainty</h3><p>Report 95% confidence intervals when sample sizes and variability allow valid calculation.</p></div>
+    <div class="tile"><h3>Meta-analysis</h3><p>Pool results only when outcomes, exposure designs and comparisons are sufficiently comparable.</p></div>
+  </div>
+  <h3>Planned visualizations</h3>
+  <ul>
+    <li>Study-selection flow diagram.</li>
+    <li>Study-characteristics table or summary plot.</li>
+    <li>Effect-size forest plot if compatible numerical data are available.</li>
+    <li>Descriptive chart of response directions when pooling is unsuitable.</li>
+  </ul>
+  <div class="placeholder">
+    <strong>Graph panel — insert verified results here</strong>
+    <p>No numerical results are displayed because study-level data have not yet been entered into this webpage.</p>
+  </div>
+  <p class="small">A statistical test should not be selected just to produce a p-value. The method must match the data, experimental design and available replication.</p>
+</section>
+
+<section id="findings">
+  <div class="kicker">06 · Results and interpretation</div>
+  <h2>Evidence summary</h2>
+  <p>This section must be completed after eligible papers have been screened and their results extracted.</p>
+  <div class="grid">
+    <div class="tile"><strong>Studies included</strong><p>[Enter verified number]</p></div>
+    <div class="tile"><strong>Microorganisms examined</strong><p>[Enter verified species or groups]</p></div>
+    <div class="tile"><strong>Pollutants examined</strong><p>[Enter verified pollutant types]</p></div>
+    <div class="tile"><strong>Main response pattern</strong><p>[Enter evidence-supported finding]</p></div>
+  </div>
+  <p class="note">These are placeholders, not findings. Replace them with verified results before presenting the poster.</p>
+</section>
+
+<section id="limits">
+  <div class="kicker">07 · Critical evaluation</div>
+  <h2>Limitations and significance</h2>
+  <h3>Potential limitations</h3>
+  <ul>
+    <li>Different species, pollutants, doses and exposure intervals may limit comparisons.</li>
+    <li>Some papers may report incomplete numerical data.</li>
+    <li>Published studies may differ in quality and reporting practices.</li>
+    <li>Observed changes do not by themselves prove a specific biological mechanism.</li>
+  </ul>
+  <h3>Why this matters</h3>
+  <p>Understanding how previous exposure influences later microbial responses may help researchers interpret microbial stress tolerance and responses in changing environments. Conclusions must remain specific to the organisms, pollutants and conditions actually studied.</p>
+</section>
+
+<section id="references">
+  <div class="kicker">08 · Literature and resources</div>
+  <h2>References</h2>
+  <p>Add the full, verified references for every study used in the analysis. Include DOI or a stable publisher link whenever available.</p>
+  <ol>
+    <li>[Author(s), year]. [Exact article title]. [Journal], [volume and pages]. DOI: [verified DOI]</li>
+    <li>[Author(s), year]. [Exact article title]. [Journal], [volume and pages]. DOI: [verified DOI]</li>
+    <li>[Author(s), year]. [Exact article title]. [Journal], [volume and pages]. DOI: [verified DOI]</li>
+  </ol>
+  <p>Useful literature-search links:</p>
+  <ul>
+    <li><a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" rel="noopener">PubMed</a></li>
+    <li><a href="https://scholar.google.com/" target="_blank" rel="noopener">Google Scholar</a></li>
+    <li><a href="https://www.crossref.org/" target="_blank" rel="noopener">Crossref — DOI lookup</a></li>
+  </ul>
+  <p class="note">Search links are discovery tools, not evidence that any particular article supports the research question. Verify each paper before citing it.</p>
+</section>
+
+<section>
+  <h2>About this project</h2>
+  <p>Prepared as a student literature-based research project for the National Conference on Environmental Solutions (NCES 2026).</p>
+  <p><strong>Presenter:</strong> [Your Name]</p>
+  <p><strong>Institution:</strong> Bhakta Kavi Narsinh Mehta University, Junagadh, Gujarat, India</p>
+  <p class="small">Update the placeholders and verify the full evidence base before public presentation.</p>
+</section>
+</main>
+
+<footer>
+  <p>NCES 2026 · Microbial Memory-Like Responses</p>
+  <p>Literature-based research · Conclusions depend on verified published evidence.</p>
+</footer>
+</body>
+    </html>
+    
